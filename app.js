@@ -8,6 +8,7 @@ let goingRight = true;
 let aliensRemoved = [];
 let results = 0;
 
+// please make this work at least
 for (let i = 0; i < 225; i++) {
     const square = document.createElement('div');
     grid.appendChild(square);
