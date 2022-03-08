@@ -7,6 +7,8 @@
 
     <title>JavaScript Games</title>
     <link rel="stylesheet" href="./Styles/style.css">
+    <script src="./connectFour/app.js" charset="utf-8"></script>
+
 
 </head>
 
@@ -16,15 +18,81 @@
         <div>
             <h1 class="results">0</h1>
             <div class="grid"></div>
-            <script src="./spaceInvader/app.js"></script>
+            <button onclick="CreateInvader()">Play</button>
         </div>
     </div>
     <br>
     <hr />
     <br>
-    <div>
+    <div class="centered">
         <h2>Conncect Four</h2>
-    </div>
+        <div>
+            <h3>The current Player is: Player <span id="current-player">1</span></h3>
+            <h3 id="connectResult"></h3>
+
+            <div class="connectGrid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="taken"></div>
+                <div class="taken"></div>
+                <div class="taken"></div>
+                <div class="taken"></div>
+                <div class="taken"></div>
+                <div class="taken"></div>
+                <div class="taken"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            function CreateInvader() {
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "./spaceInvader/app.js";
+                document.getElementsByTagName("head")[0].appendChild(script);
+                return false;
+            }
+        </script>
+
 </body>
 
 </html>
